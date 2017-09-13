@@ -7,7 +7,7 @@ The `kerberos` package is a C++ extension that requires a build environment to b
 Windows already contains the SSPI API used for Kerberos authentication. However you will need to install a full compiler tool chain using visual studio C++ to correctly install the kerberos extension.
 {{% /note %}}
 
-This package is fork of https://github.com/mongodb-js/kerberos. It provide API to support default krbV5 mechanism for client.
+This package is fork of https://github.com/mongodb-js/kerberos. It provides API to support default krbV5 mechanism for client.
 
 ### Diagnosing on UNIX
 
@@ -29,13 +29,13 @@ If correctly compiles and runs the tests you are golden. We can now try to insta
 
 ```
 cd yourproject
-npm install kerberos --save
+npm install node-kerberos --save
 ```
 
 If it still fails the next step is to examine the npm log. Rerun the command but in this case in verbose mode.
 
 ```
-npm --loglevel verbose install kerberos
+npm --loglevel verbose install node-kerberos
 ```
 
 This will print out all the steps npm is performing while trying to install the module.
@@ -58,7 +58,7 @@ Next you will have to build the project manually to test it. Use any tool you us
 
 ```
 git clone https://github.com/v-suhame/kerberos.git
-cd kerberos
+cd node-kerberos
 npm install
 node-gyp rebuild
 ```
